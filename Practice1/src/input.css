@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-bar{
+        @apply bg-purple-600 text-white flex md:justify-between flex-col md:flex-row min-h-10 items-center
+    }
+}
