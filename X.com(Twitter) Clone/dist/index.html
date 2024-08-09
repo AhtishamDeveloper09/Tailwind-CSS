@@ -17,7 +17,7 @@
   <body class="bg-black text-white">
     <div class="md:container flex mx-auto my-3">
       <!-- First Section -->
-      <div class="first w-16 md:w-[70%]">
+      <div class="first w-16 md:w-[30%]">
         <!-- Sidebar Section-->
         <div class="sidebar flex md:items-end flex-col sticky top-0">
           <!-- X.com Logo -->
@@ -37,7 +37,7 @@
 
           <!-- Sidebar -->
           <ul
-            class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full"
+            class="flex flex-col text-2xl space-y-2 md:px-11 font-bold w-full"
           >
             <li
               class="flex justify-center md:justify-start items-center gap-3 mr-4 md:w-fit px-5 py-2 hover:bg-gray-900 hover:rounded-full hover:cursor-pointer"
@@ -151,23 +151,27 @@
       </div>
 
       <!-- Second Section -->
-      <div class="second w-full border-[1px] border-x-gray-600 border-y-black">
-        <div class="top flex p-3 relative">
-          <div
-            class="absolute w-12 h-1 rounded-full bg-blue-500 bottom-0 left-[20%] z-10"
-          ></div>
-          <div class="left w-1/2 flex justify-center font-bold text-lg">
-            For you
+      <div
+        class="second w-full md:w-[40%] border-[1px] border-x-gray-600 border-y-black"
+      >
+        <div class="sticky top-0 bg-black opacity-80">
+          <div class="top flex p-3">
+            <div
+              class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%] z-10"
+            ></div>
+            <div class="left w-1/2 flex justify-center font-bold text-lg">
+              For You
+            </div>
+            <div class="right w-1/2 flex justify-center font-bold text-lg">
+              Following
+            </div>
+            <div class="settings mx-2">
+              <span class="material-symbols-outlined"> settings </span>
+            </div>
           </div>
-          <div class="right w-1/2 flex justify-center font-bold text-lg">
-            Following
-          </div>
-          <div class="settings mx-2">
-            <span class="material-symbols-outlined text-3xl"> settings </span>
-          </div>
-        </div>
 
-        <div class="h-[1px] w-full bg-gray-700"></div>
+          <div class="h-[1px] w-full bg-gray-700"></div>
+        </div>
 
         <div class="whatishapp flex gap-4 my-3">
           <div class="img m-2 w-16">
@@ -445,136 +449,149 @@
       </div>
 
       <!-- Third Section -->
-      <div class="third w-full hidden md:block">
-        <div class="search m-3">
-          <input
-            class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2"
-            type="text"
-            placeholder="Search"
-          />
+      <div class="third w-[35%] hidden md:block">
+        <div class="search sticky top-0 bg-black pt-1 pb-1 m-2">
+          <div
+            class="flex justify-center items-center gap-2 w-2/3 rounded-full bg-[#16181c] px-4 py-2"
+          >
+            <span class="material-symbols-outlined text-gray-500">
+              search
+            </span>
+            <input
+              class="w-full rounded-full bg-[#16181c] text-white px-2 outline-none"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
         </div>
 
         <!-- Whats Happengig Section -->
-        <div class="sticky top-3">
-          <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
-            <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+        <!-- <div class="sticky top-3"> -->
+        <div class="whats m-3 bg-[#16181c] w-2/3 py-5 rounded-xl space-y-1">
+          <h1 class="text-xl font-bold px-3">Whats Happening</h1>
 
-            <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-              <div class="text-sm text-gray-400">Trending in Pakistan</div>
-              <div class="font-bold">#BabarAzam</div>
-              <div class="text-sm text-gray-400">40.5k Posts</div>
-            </div>
-            <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-              <div class="text-sm text-gray-400">Trending in Pakistan</div>
-              <div class="font-bold">#Babar</div>
-              <div class="text-sm text-gray-400">32.7k Posts</div>
-            </div>
-            <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-              <div class="text-sm text-gray-400">Trending in Pakistan</div>
-              <div class="font-bold">#PakistanCricket</div>
-              <div class="text-sm text-gray-400">28.9k Posts</div>
-            </div>
-            <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-              <div class="text-sm text-gray-400">Trending in Pakistan</div>
-              <div class="font-bold">#MuhammadRizwan</div>
-              <div class="text-sm text-gray-400">25.2k Posts</div>
-            </div>
+          <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
+            <div class="text-sm text-gray-400">Trending in Pakistan</div>
+            <div class="font-bold">#BabarAzam</div>
+            <div class="text-sm text-gray-400">40.5k Posts</div>
           </div>
-
-          <!-- Who to Follow Section -->
-          <div class="who m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-2">
-            <h1 class="text-xl font-bold px-3">Who to follow</h1>
-
-            <div
-              class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
-            >
-              <div class="flex gap-3">
-                <div class="p1">
-                  <img
-                    class="w-12 h-12 rounded-full"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"
-                    alt="vercel"
-                  />
-                </div>
-                <div class="p2">
-                  <div>Vercel</div>
-                  <div class="text-gray-500 hover:underline">@vercel</div>
-                </div>
-              </div>
-
-              <div class="p3">
-                <button
-                  class="bg-white text-black px-5 py-2 rounded-full font-bold"
-                >
-                  Follow
-                </button>
-              </div>
-            </div>
-            <div
-              class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
-            >
-              <div class="flex gap-3">
-                <div class="p1">
-                  <img
-                    class="w-12 h-12 rounded-full"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"
-                    alt="vercel"
-                  />
-                </div>
-                <div class="p2">
-                  <div>React</div>
-                  <div class="text-gray-500 hover:underline">@react</div>
-                </div>
-              </div>
-
-              <div class="p3">
-                <button
-                  class="bg-white text-black px-5 py-2 rounded-full font-bold"
-                >
-                  Follow
-                </button>
-              </div>
-            </div>
-            <div
-              class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
-            >
-              <div class="flex gap-3">
-                <div class="p1">
-                  <img
-                    class="w-12 h-12 rounded-full"
-                    src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg"
-                    alt="vercel"
-                  />
-                </div>
-                <div class="p2">
-                  <div>Shad.js</div>
-                  <div class="text-gray-500 hover:underline">@shad</div>
-                </div>
-              </div>
-
-              <div class="p3">
-                <button
-                  class="bg-white text-black px-5 py-2 rounded-full font-bold"
-                >
-                  Follow
-                </button>
-              </div>
-            </div>
-
-            <div class="text-blue-500 hover:underline my-5 px-3 cursor-pointer">
-              Show more
-            </div>
+          <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
+            <div class="text-sm text-gray-400">Trending in Pakistan</div>
+            <div class="font-bold">#Babar</div>
+            <div class="text-sm text-gray-400">32.7k Posts</div>
           </div>
-
-          <div class="terms m-3 w-1/2  text-xs text-gray-500 px-3 py-5 space-y-2">
-            <span class="hover:underline cursor-pointer mr-2">Terms of Service</span>
-            <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
-            <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
-            <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
-            <span class="hover:underline cursor-pointer mr-2">Ads info</span>
-            <span class="hover:underline cursor-pointer mr-2">More © 2024 X Corp.</span>
+          <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
+            <div class="text-sm text-gray-400">Trending in Pakistan</div>
+            <div class="font-bold">#PakistanCricket</div>
+            <div class="text-sm text-gray-400">28.9k Posts</div>
+          </div>
+          <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
+            <div class="text-sm text-gray-400">Trending in Pakistan</div>
+            <div class="font-bold">#MuhammadRizwan</div>
+            <div class="text-sm text-gray-400">25.2k Posts</div>
           </div>
         </div>
+
+        <!-- Who to Follow Section -->
+        <div class="who m-3 bg-[#16181c] w-2/3 py-5 rounded-xl space-y-1">
+          <h1 class="text-xl font-bold px-3">Who to follow</h1>
+
+          <div
+            class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
+          >
+            <div class="flex gap-3">
+              <div class="p1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"
+                  alt="vercel"
+                />
+              </div>
+              <div class="p2">
+                <div>Vercel</div>
+                <div class="text-gray-500 hover:underline">@vercel</div>
+              </div>
+            </div>
+
+            <div class="p3">
+              <button
+                class="bg-white text-black px-5 py-2 rounded-full font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div
+            class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
+          >
+            <div class="flex gap-3">
+              <div class="p1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"
+                  alt="vercel"
+                />
+              </div>
+              <div class="p2">
+                <div>React</div>
+                <div class="text-gray-500 hover:underline">@react</div>
+              </div>
+            </div>
+
+            <div class="p3">
+              <button
+                class="bg-white text-black px-5 py-2 rounded-full font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div
+            class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer"
+          >
+            <div class="flex gap-3">
+              <div class="p1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg"
+                  alt="vercel"
+                />
+              </div>
+              <div class="p2">
+                <div>Shad.js</div>
+                <div class="text-gray-500 hover:underline">@shad</div>
+              </div>
+            </div>
+
+            <div class="p3">
+              <button
+                class="bg-white text-black px-5 py-2 rounded-full font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+
+          <div class="text-blue-500 hover:underline my-5 px-3 cursor-pointer">
+            Show more
+          </div>
+        </div>
+
+        <div class="terms m-3 w-2/3 text-sm text-gray-500 px-3 py-5 space-y-2">
+          <span class="hover:underline cursor-pointer mr-2"
+            >Terms of Service</span
+          >
+          <span class="hover:underline cursor-pointer mr-2"
+            >Privacy Policy</span
+          >
+          <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+          <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+          <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+          <span class="hover:underline cursor-pointer mr-2"
+            >More © 2024 X Corp.</span
+          >
+        </div>
+        <!-- </div> -->
       </div>
     </div>
   </body>
